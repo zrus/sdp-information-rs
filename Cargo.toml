@@ -1,0 +1,21 @@
+[package]
+name = "rtsp-connection"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rtsp-types = "*"
+sdp-types = "*"
+tokio = { version = "1.8.1", features = ["full"] }
+tokio-util = { version = "0.6", features = ["codec", "io"] }
+smallvec = { version = "1.6.1", features = ["union"] }
+url = { version = "2", features = ["serde"] }
+time = "0.1.0"
+bytes = "1"
+pretty-hex = "0.2.1"
+thiserror = "1"
+futures = "0.3"
+http-auth = "0.1.2"
+pin-project = "1.0.7"
